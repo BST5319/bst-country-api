@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .h2 {
+        font-weight: bolder;
+      }
+      .paragraph {
+        padding-left: 10px;
+        font-size: x-large;
+      }
+      .note {
+        color: rgb(241, 44, 44);
+        padding: 5px;
+        font-size: small;
+      }
+      .note-example {
+        margin-left: 5px;
+      }
+      .api-request-syntax {
+        padding-top: 20px;
+        font-size: 18px;
+      }
+      .api-request-example {
+        padding-top: 20px;
+        font-size: large;
+      }
+      .api-request-output {
+        padding: 5px;
+        margin-top: 15px;
+        background-color: #f6f8fa;
+        width: 600px;
+        font-size: large;
+      }
+      .wave-emoji {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to BST's API</h1>
+      <p class="wave-emoji">&#128075;</p>
+      <p class="paragraph">
+        This is a basic API used to fetch country capital using the name of
+        country
+      </p>
+      <div class="api-request-syntax">
+        <label for="api-request-syntax">Syntax:</label>
+        <code>http://bst-country-api/India/{State_name}</code>
+      </div>
+      <div class="api-request-example">
+        <label for="api-request-example example">Usage Example:</label>
+        <code class="json">http://bst-country-api/India/Maharashtra</code>
+      </div>
+      <div class="note">
+        <p>
+          Note: While using state names having two words use the state names as
+          ArunachalPradesh , AndhraPradesh , etc...
+        </p>
+        Example:
+        <code class="note-example">
+          http://bst-country-api/India/ArunachalPradesh
+        </code>
+      </div>
+      <div class="api-request-output">
+        <label for="api-request-output output">Ouput:</label>
+        <code class="json"> { "capital":"Mumbai" } </code>
+      </div>
+    </div>
+  </body>
+</html>
