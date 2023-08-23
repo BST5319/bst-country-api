@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-weight: bolder;
+  text-align: center;
+}
+.paragraph {
+  text-align: center;
+  margin-left: 10px;
+  font-size: x-large;
+}
+.note {
+  text-align: center;
+  color: rgb(241, 44, 44);
+  padding: 5px;
+  font-size: small;
+}
+.note-example {
+  text-align: center;
+  margin-left: 5px;
+}
+.api-request-syntax {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+}
+.api-request-example {
+  text-align: center;
+  padding-top: 20px;
+  font-size: large;
+}
+.api-request-output {
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  background-color: #f6f8fa;
+  width: 320px;
+  font-size: large;
+}
+.wave-emoji {
+  text-align: center;
+  font-size: 40px;
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  h1 {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .wave-emoji {
+    font-size: 25px;
+  }
+  .api-request-syntax {
+    font-size: 10px;
+  }
+  .api-request-example {
+    font-size: 9px;
+  }
+  .api-request-output {
+    width: 200px;
+    font-size: small;
+  }
+  .note {
+    font-size: 10px;
+    padding: 0px 20px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 374px) {
+  h1 {
+    font-size: 25px;
+  }
+  .paragraph {
+    font-size: 17px;
+  }
+  .api-request-syntax {
+    font-size: 15px;
+  }
+  .api-request-example {
+    font-size: 13px;
+  }
+  .note {
+    font-size: 12px;
+  }
+  .api-request-output {
+    font-size: 15px;
+  }
+  .wave-emoji {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 25px;
+  }
+  .wave-emoji {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 18px;
+    text-align: center;
+  }
+  .api-request-syntax {
+    font-size: 11px;
+    padding-left: 10px;
+  }
+  .api-request-example {
+    padding-left: 7px;
+    font-size: 10px;
+  }
+  .api-request-output {
+    font-size: small;
+    margin-left: 10px;
+    text-align: center;
+    width: 210px;
+  }
+  .note {
+    text-align: center;
+    padding-left: 10px;
+  }
+}
