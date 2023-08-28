@@ -1,41 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Home Page</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to BST's API</h1>
-      <p class="wave-emoji">&#128075;</p>
-      <p class="paragraph">
-        This is a basic API used to fetch country capital using the name of
-        country
-      </p>
-      <div class="api-request-syntax">
-        <label for="api-request-syntax syntax">Syntax:</label>
-        <code>http://bst-country-api/India/{State_name}</code>
-      </div>
-      <div class="api-request-example">
-        <label for="api-request-example example">Usage Example:</label>
-        <code class="json">http://bst-country-api/India/Maharashtra</code>
-      </div>
-      <div class="note">
-        <p>
-          Note: While using state names having two words use the state names as
-          ArunachalPradesh , AndhraPradesh , etc...
-        </p>
-        Example:
-        <code class="note-example">
-          http://bst-country-api/India/ArunachalPradesh
-        </code>
-      </div>
-      <div class="api-request-output">
-        <label for="api-request-output output">Ouput:</label>
-        <code class="json"> { "capital":"Mumbai" } </code>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Home Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to BST's API</h1>
+    <p class="wave-emoji">&#128075;</p>
+    <p class="paragraph">
+      This is a basic API used to fetch country capital using the name of
+      country
+    </p>
+    <div class="api-request-syntax">
+      <label for="api-request-syntax syntax">Syntax:</label>
+      <code>http://bst-country-api.onrender.com/India/{State_name}</code>
     </div>
-  </body>
+    <div class="api-request-example">
+      <label for="api-request-example example">Usage Example:</label>
+      <code class="json">http://bst-country-api.onrender.com/India/Maharashtra</code>
+    </div>
+    <div class="note">
+      <p>
+        Note: While using state names having two words use the state names as
+        ArunachalPradesh , AndhraPradesh , etc...
+      </p>
+      Example:
+      <code class="note-example">
+          http://bst-country-api.onrender.com/India/ArunachalPradesh
+        </code>
+    </div>
+    <div class="api-request-output">
+      <label for="api-request-output output">Ouput:</label>
+      <code class="json"> { "capital":"Mumbai" } </code>
+    </div>
+    <div class="try-out">
+      <label for="try-out">Try Out:</label>
+      <code>
+        https://bst-country-api.onrender.com/India/
+        <select name="State_name" id="state_selection" class="state_selection">
+          <option value="AndhraPradesh">AndhraPradesh</option>
+          <option value="ArunachalPradesh">ArunachalPradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="HimachalPradesh">HimachalPradesh</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="MadhyaPradesh">MadhyaPradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="TamilNadu">TamilNadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="UttarPradesh">UttarPradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="WestBengal">WestBengal</option>
+          <option value="Delhi">Delhi</option>
+        </select>
+
+        <button type="submit" class="try-out-btn">Go</button>
+      </code>
+    </div>
+  </div>
+  <script src="js/redirect.js"></script>
+</body>
+
 </html>
