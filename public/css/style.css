@@ -56,6 +56,26 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
+.try-out > label {
+  display: block;
+}
+.try-out {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+}
+.try-out > code {
+  font-size: 17px;
+}
+.try-out > code > select {
+  font-size: 17px;
+  text-align: center;
+  padding: 3px;
+}
+.try-out-btn {
+  margin-left: 10px;
+  border-radius: 10px;
+}
 @media (min-width: 375px) and (max-width: 425px) {
   h1 {
     font-size: 20px;
@@ -82,6 +102,28 @@ h1 {
     padding: 0px 20px;
     margin-left: 15px;
   }
+  .try-out > label {
+    display: block;
+  }
+  .try-out {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 15px;
+  }
+  .try-out > code {
+    font-size: 12px;
+  }
+  .try-out > code > select {
+    font-size: 9px;
+    text-align: center;
+    padding: 3px;
+  }
+  .try-out-btn {
+    display: block;
+    margin-left: 43vw;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 374px) {
@@ -106,6 +148,27 @@ h1 {
   .wave-emoji {
     font-size: 20px;
   }
+  .try-out > label {
+    display: block;
+    font-size: 15px;
+  }
+  .try-out {
+    text-align: center;
+    padding-top: 15px;
+  }
+  .try-out > code {
+    font-size: 12px;
+  }
+  .try-out > code > select {
+    font-size: 9px;
+    text-align: center;
+  }
+  .try-out-btn {
+    display: block;
+    margin-left: 43vw;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
 }
 @media screen and (max-width: 320px) {
   h1 {
@@ -119,12 +182,12 @@ h1 {
     text-align: center;
   }
   .api-request-syntax {
-    font-size: 11px;
+    font-size: 13px;
     padding-left: 10px;
   }
   .api-request-example {
     padding-left: 7px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .api-request-output {
     font-size: small;
@@ -135,5 +198,28 @@ h1 {
   .note {
     text-align: center;
     padding-left: 10px;
+  }
+  .try-out > label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .try-out {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .try-out > code {
+    font-size: 10px;
+  }
+  .try-out > code > select {
+    font-size: 10px;
+    text-align: center;
+    padding: 3px;
+  }
+  .try-out-btn {
+    display: block;
+    margin-left: 135px;
+    margin-top: 15px;
+    border-radius: 10px;
   }
 }
